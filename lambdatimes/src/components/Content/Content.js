@@ -14,10 +14,12 @@ export default class Content extends Component {
       tabs: [],
       cards: []
     };
+    console.log(props)
   }
 
   componentDidMount() {
     // Once the component has mounted, get the data and reflect that data on the state.
+    // this.setState()
   }
 
   changeSelected = tab => {
