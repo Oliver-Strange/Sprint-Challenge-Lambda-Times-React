@@ -15,15 +15,13 @@ const Tab = props => {
 
       console.log(props);
   return (
-    <div
+    <div>
+      <button
       className={value}
-      onClick={() => {
-        /* Replace this dummy click handler function with your selectTabHandler function from props 
-         you'll need to pass the `tab` in as an argument to this handler. */
-         props.selectTabHandler(props.tab)
-      }}
+      onClick={() => {props.selectTabHandler(props.tab)}}
     >
       {props.tab.toUpperCase()}
+      </button>
     </div>
   );
 };
